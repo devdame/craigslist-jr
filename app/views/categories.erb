@@ -2,7 +2,7 @@
 
 
 <% Category.all.each do |category|%>
-  <h2><%= category.name %></h2>
+  <h2><a href="/categories/<%= category.name %>"><%= category.name %></a></h2>
   <p><%= category.description %></p>
 <%end%>
 

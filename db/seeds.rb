@@ -8,11 +8,13 @@ require 'faker'
 end
 
 Category.all.each do |cat|
-  Post.create({
-    name: Faker::Company.name,
-    description: Faker::Lorem.paragraph,
-    cost: rand(100..1000),
-    email: Faker::Internet.email,
-    category_id: cat.id
-  })
+	10.times do 
+	  Post.create({
+	    name: Faker::Company.name,
+	    description: Faker::Lorem.paragraph,
+	    cost: rand(100..1000),
+	    email: Faker::Internet.email,
+	    category_id: cat.id
+	  })
+  end
 end

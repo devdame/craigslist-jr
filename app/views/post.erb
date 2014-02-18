@@ -1,0 +1,9 @@
+<h1><%= params[:category] %> <a href='/categories'>Back</a></h1>
+
+<% @posts.each do |post| %>
+  <h2><%= post.name %></h2>
+  <p><%= post.email %></p>
+  <p><%= post.updated_at %></p>
+  <p><%= post.description %></p>
+  <p><%= to_money(post.cost) %></p>
+<% end %>
