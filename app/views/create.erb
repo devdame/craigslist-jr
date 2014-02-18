@@ -1,1 +1,15 @@
-<p>CREATING STUFF HERE</p>
+<h1>Tell Us About Your Fox Stuff</h1>
+
+<form action = '/confirm_new_post' method = 'post' id = 'create_form'>
+  <p>Pick a category:  <select name = "category" form = "create_form">
+    <%Category.all.each do |category|%>
+      <option value="<%=category%>"><%=category%><option>
+    <%end%>
+  </select>
+  <p>Item name:</p>
+  <input type = "text" name = "title">
+  <p>Item description:</p>
+  <textarea rows="10" cols="50" name="description" form="create_form"></textarea>
+  <p>Your email:  <input type = "text" name = "email"></p>
+  <p><input type = "submit" value = "list that foxy item!"></p>
+</form>
