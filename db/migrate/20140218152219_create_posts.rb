@@ -6,6 +6,7 @@ class CreatePosts < ActiveRecord::Migration
       t.integer :cost
       t.string :email
       t.integer :category_id
+      t.string :url
 
       t.timestamps
   	end
