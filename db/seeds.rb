@@ -12,6 +12,7 @@ Category.all.each do |cat|
     name: Faker::Company.name,
     description: Faker::Lorem.paragraph,
     cost: rand(100..1000),
-    email: Faker::Internet.email
+    email: Faker::Internet.email,
+    category_id: cat.id
   })
 end
