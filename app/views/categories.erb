@@ -1,5 +1,8 @@
 <h1>Stuff For Your Fox:</h1>
 
-<% Category.all.each_with_index do |category, index|%>
-  <%=index%>. <%=category.name%>
+
+<% Category.all.each do |category|%>
+  <h2><%= category.name %></h2>
+  <p><%= category.description %></p>
 <%end%>
+
