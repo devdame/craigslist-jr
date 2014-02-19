@@ -4,9 +4,87 @@
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
 }
+
 th {
   text-align: left;
 }
+
 body {
   text-align: center;
+  background: #99CCCD;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#fox {
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+}
+
+#logo {
+  font-family: monoton, sans-serif;
+  font-size: 8em;
+  margin-bottom: -10px;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: alex-brush, cursive;
+  font-size: 2.3em;
+}
+
+h2 {
+  font-size: 3.3em;
+  font-weight: bold;
+  margin-top: 23px;
+  margin-bottom: 13px;
+}
+
+#subheader {
+  margin-bottom: 40px;
+}
+
+
+.submit {
+  background: #0E0E0E;
+  color: #99CCCD;
+  padding: 7px;
+  border-radius: 12px;
+}
+
+.button {
+  display: inline block;
+  margin: 30px auto;
+  width: 200px;
+  height: 110px;
+  text-align: center;
+  background: #0E0E0E;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#updater {
+  border-top: 1px solid #0E0E0E;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+
+.button a {
+  font-weight: normal;
+  position: relative;
+  top: 10px;
+  text-decoration: none;
+  color: #99CCCD;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.bottom_submit {
+  margin-bottom: 40px;
+}
+
+.results {
+  font-weight: 600;
 }
