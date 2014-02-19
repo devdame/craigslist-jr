@@ -30,7 +30,6 @@ post '/confirm_new_post' do
 end
 
 post '/update_post' do
-  p params
   erb :index
 end
 
