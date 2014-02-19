@@ -71,14 +71,26 @@ h2 {
   margin-top: 50px;
 }
 
+select {
+  margin-left: 10px;
+}
+
+.textbox {
+  margin-left: 10px;
+}
+
 .button a {
   font-weight: normal;
   position: relative;
-  top: 10px;
+  top: 8px;
   text-decoration: none;
   color: #99CCCD;
   font-size: 1.4em;
   text-align: center;
+}
+
+.first_submit {
+  margin-top: 45px;
 }
 
 .bottom_submit {
