@@ -1,8 +1,12 @@
-<h1>Stuff For Your Fox:</h1>
-<a href="/">BACK</a>
+<h2>Stuff For Your Fox:</h2>
 
-<% Category.all.each do |category|%>
-  <h2><a href="/categories/<%= category.name %>"><%= category.name %></a></h2>
-  <p><%= category.description %></p>
-<%end%>
+<a class="back" href="/">BACK</a>
 
+<div id="all_cats">
+  <% Category.all.each do |category|%>
+    <div class="cat_list_box">
+      <h3 class="cat_list"><a href="/categories/<%= category.name %>"><%= category.name %></a></h3>
+      <p><%= category.description %></p>
+    </div>
+  <%end%>
+</div>
