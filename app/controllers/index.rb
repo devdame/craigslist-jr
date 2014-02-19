@@ -30,6 +30,9 @@ post '/confirm_new_post' do
 end
 
 post '/update_post' do
+  params[:category_id] = Category.where(name: params[:category_name])[0].id
+  params.delete("category_name")
+  Post.where(url: params[:url])[0].update_attributes(params)
   erb :index
 end
 
